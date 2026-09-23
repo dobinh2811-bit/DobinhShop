@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Do Binh Store</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<header class="nav">
+  <div class="brand"><span>Z</span> ZULLU <b>STORE</b></div>
+  <a href="#products">Sản phẩm</a><a href="#how">Hướng dẫn</a><button id="cartBtn">Giỏ hàng <i id="cartCount">0</i></button>
+</header>
+<main>
+<section class="hero">
+  <div class="badge">SHOP BÁN HỖ TRỢ KÉO TÂM</div>
+  <h1> ADMIN <em>ZULLU </em></h1>
+  <p>Shop Bán Hỗ Trợ Kéo Tâm Giá Học Sinh Uy Tín Hàng Đầu</p>
+  <a class="cta" href="#products">XEM SẢN PHẨM →</a>
+</section>
+<section id="products" class="section">
+<h2>SẢN PHẨM</h2><div id="productsGrid" class="grid"></div>
+</section>
+<section id="how" class="section how">
+<h2>QUY TRÌNH NẠP VÀ MUA</h2>
+<div class="steps"><div><b>01</b><h3>Chọn sản phẩm</h3><p>Xem mô tả và thêm vào giỏ hàng</p></div>
+<div><b>02</b><h3>Thanh toán</h3><p>Thực hiện thanh toán theo thông tin của shop</p></div>
+<div><b>03</b><h3>Nhận hàng</h3><p>Nhập mã đơn để kiểm tra trạng thái giao hàng</p></div></div>
+</section>
+</main>
+<footer>©Bản Quyền Thuộc Về ZulluMod</footer>
+
+<div id="modal" class="modal hidden"><div class="panel">
+<button class="close" id="close">×</button><h2>GIỎ HÀNG</h2><div id="cartItems"></div><div class="total">Tổng: <strong id="total">100000đ</strong></div>
+<div class="checkout"><input id="customer" placeholder="Tên / Username"><input id="contact" placeholder="Telegram / SĐT"><button id="order">TẠO ĐƠN</button></div>
+<div id="paymentBox" class="payment-box hidden">
+  <h3>QUÉT MÃ THANH TOÁN</h3>
+  <p>Chuyển đúng số tiền của đơn hàng và giữ nguyên nội dung chuyển khoản</p>
+  <img src="assets/payment/techcombank-qr.jpeg" alt="QR thanh toán Techcombank">
+  <div id="paymentInfo"></div>
+  <button id="confirmPayment" class="confirm-payment hidden">XÁC NHẬN ĐÃ THANH TOÁN</button>
+</div>
+<div id="result"></div>
+</div></div>
+<script src="assets/app.js?v=4"></script>
+</body></html>
